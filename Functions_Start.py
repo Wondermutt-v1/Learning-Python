@@ -23,7 +23,7 @@ def power(num, x=1):
     return result
 
 # TODO: function with variable number of arguments
-def multi_add(*args):
+def multi_add(arg1,*args):
     result = 0
     for x in args:
         result = result + x
@@ -43,3 +43,5 @@ def multi_add(*args):
 # print(power(x=3, num=2))
 
 print (multi_add(4,5,10,4, 10))
+
+print(multi_add(4,5,10,4, 10))
