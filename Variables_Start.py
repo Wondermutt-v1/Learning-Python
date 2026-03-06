@@ -53,4 +53,4 @@ someFunction()
 print(mystr)
 
 del mystr
-print(mystr)
+# print(mystr)
