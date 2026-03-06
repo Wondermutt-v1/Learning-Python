@@ -33,7 +33,6 @@ def main():
     for i,d in enumerate(days):
         print(i, d) 
         
-        
 if __name__ == "__main__":
     main()
     
