@@ -23,5 +23,5 @@ def count_days(theyear, themonth, theday):
 
     for week in weeklist:
         if week[whichday] != 0:
-        daycnt += 1
+            daycnt += 1
         return daycnt
