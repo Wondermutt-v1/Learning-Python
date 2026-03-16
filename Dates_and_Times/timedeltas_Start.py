@@ -31,3 +31,10 @@ if afd < today:
 # TODO: Calculate the amount of time until April Fool's day
 time_to_afd = afd - today
 print("It is :", time_to_afd, "days until April Fool's day.") 
+
+today = date.today()
+tomorrow = today+timedelta(days=1)
+print("Tomorrow is ", tomorrow)
+
+# tomorrow = date(today.year, today.month, today.day+1)
+# print("Tomorrow is ", tomorrow
