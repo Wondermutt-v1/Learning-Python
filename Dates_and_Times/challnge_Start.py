@@ -3,10 +3,10 @@
 # LinkedIn Learning Python course
 #
 
-from calendar import calendar
+#from calendar import calendar
 
 
-def count_days(theyear, themonth, theday):
+def count_days(theyear, themonth, whichday):
     import calendar
     daycnt = 0
     weeklist = calendar.monthcalendar(theyear,themonth)
@@ -24,4 +24,15 @@ def count_days(theyear, themonth, theday):
     for week in weeklist:
         if week[whichday] != 0:
             daycnt += 1
-        return daycnt
+    return daycnt
+
+def main():
+    testyear = 2025
+    testmonth = 12
+    testday = 0
+    result = count_days(testyear, testmonth, testday)
+    print(f"Result: {result}")
+
+if __name__ == "__main__":
+    main()
+    
