@@ -23,7 +23,7 @@ weeklist = calendar.monthcalendar(theyear,themonth)
 #   ]
 
 
-def count_days(year, month, day):
+def count_days(theyear, themonth, theday):
     if week[whichday] != 0:
         daycnt += 1
 return daycnt
