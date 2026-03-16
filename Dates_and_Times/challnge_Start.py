@@ -3,15 +3,13 @@
 # LinkedIn Learning Python course
 #
 
+from calendar import calendar
 
-import calendar
-from datetime import date
-from datetime import time
-from datetime import datetime
-from datetime import timedelta
 
-daycnt = 0
-weeklist = calendar.monthcalendar(theyear,themonth)
+def count_days(theyear, themonth, theday):
+    import calendar
+    daycnt = 0
+    weeklist = calendar.monthcalendar(theyear,themonth)
 # monthcalendar returns an array of week lists, like this:
 # [
 # [0, 0, 1, 1, 1, 1, 1], 
@@ -23,7 +21,7 @@ weeklist = calendar.monthcalendar(theyear,themonth)
 #   ]
 
 
-def count_days(theyear, themonth, theday):
-    if week[whichday] != 0:
+    for week in weeklist:
+        if week[whichday] != 0:
         daycnt += 1
-return daycnt
+        return daycnt
