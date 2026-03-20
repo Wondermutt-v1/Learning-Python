@@ -1,0 +1,38 @@
+#
+# Mad Libs Challenge
+# Intro to Python 2026
+#
+
+
+# TODO: prompt user to provide the missing words
+colour = input("Colour: ")
+adjective = input("Adjective: ")
+# text = """
+# Roses are {colour},
+# Violets are blue,
+# Sugar is {adjective},
+# And so are you!
+# """
+
+# text = """
+# Roses are {0},
+# Violets are blue,
+# Sugar is {1},
+# And so are you!
+# """
+
+text = f"""
+Roses are {colour},
+Violets are blue,
+Sugar is {adjective},
+And so are you!
+"""
+# TODO: print the final text
+#print(text.format(adjective = adjective, colour = colour)) # Using .format allows me to replace the keywords in curly brackets with the variable values without consideration of the position of the argument
+# print(text.format(adjective, colour))  # without the keywords the arguments are positional so the position matters 
+# print(text.format(colour, adjective))
+
+# the text string with  =f""" """ is now looking for the variables
+
+
+print(text)
