@@ -12,7 +12,7 @@
 class Stock:
     # pass
     # TODO: create the properties and initialize
-    def __init__(self, ticker, price, company):
+    def __init__(self, ticker, price, company) -> None:
         self.ticker = ticker
         self.price = price
         self.company = company
@@ -21,7 +21,7 @@ class Stock:
 
 # TODO: Create a method to And a method get_description() which returns a string in the form of: "Ticker: Company -- $Price"
     def get_description(self):
-        desc = f"{self.ticker}:{self.company} -- {self.price}"
+        desc = f"{self.ticker}: {self.company} -- ${self.price}"
         return desc
         
     
