@@ -3,11 +3,11 @@
 
 from abc import ABC, abstractmethod
 
-class GraphicShape(ABC):
+class GraphicShape(ABC): # Using ABC to allow us to create and abstract method and prevent calling the Graphic shape class explicitly and allowing us to call only the subclasses
     def __init__(self):
         super().__init__()
 
-    @abstractmethod
+    @abstractmethod  # This allows me to make sure that I have a calcAre method in each function
     def calcArea(self):
         pass
 
