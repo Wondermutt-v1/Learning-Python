@@ -8,7 +8,6 @@ class GraphicShape(ABC):
         super().__init__()
 
     @abstractmethod
-    
     def calcArea(self):
         pass
 
@@ -16,14 +15,17 @@ class GraphicShape(ABC):
 class Circle(GraphicShape):
     def __init__(self, radius):
         self.radius = radius
+    def calcArea(self):
+        return  3.14 * (self.radius **2)
 
 
 class Square(GraphicShape):
     def __init__(self, side):
         self.side = side
 
-
-g = GraphicShape()
+    def calcArea(self):
+        return self.side *self.side
+# g = GraphicShape()
 
 c = Circle(10)
 print(c.calcArea())
