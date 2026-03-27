@@ -5,8 +5,8 @@
 
 
 # TODO: prompt user to provide the missing words
-colour = input("Colour: ")
-adjective = input("Adjective: ")
+colour = input("Colour: ").strip().lower()
+adjective = input("Adjective: ").strip().lower()
 # text = """
 # Roses are {colour},
 # Violets are blue,
