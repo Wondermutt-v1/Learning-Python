@@ -1,11 +1,14 @@
 # Python Object Oriented Programming by Joe Marini course example
 # Using Abstract Base Classes to enforce class constraints
 
+from abc import ABC, abstractmethod
 
-class GraphicShape:
+class GraphicShape(ABC):
     def __init__(self):
         super().__init__()
 
+    @abstractmethod
+    
     def calcArea(self):
         pass
 
