@@ -10,8 +10,22 @@
 # of "Ticker: Company -- $Price"
 
 class Stock:
-    pass
+    # pass
+    # TODO: create the properties and initialize
+    def __init__(self, ticker, price, company):
+        self.ticker = ticker
+        self.price = price
+        self.company = company
+        
 
+
+# TODO: Create a method to And a method get_description() which returns a string in the form of: "Ticker: Company -- $Price"
+    def get_description(self):
+        desc = f"{self.ticker}:{self.company} -- {self.price}"
+        return desc
+        
+    
+    
 # ~~~~~~~~~ TEST CODE ~~~~~~~~~
 msft = Stock("MSFT", 342.0, "Microsoft Corp")
 goog = Stock("GOOG", 135.0, "Google Inc")
