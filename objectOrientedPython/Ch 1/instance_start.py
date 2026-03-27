@@ -11,6 +11,7 @@ class Book:
         self.author = author
         self.pages = price
         self.price = price
+        self.__secret = "This is a secret attribute"
 
     # TODO: create instance methods
     def getprice(self):
@@ -26,12 +27,16 @@ class Book:
 b1 = Book("War and Peace", "Leo T", 1225, 39.99)
 b2 = Book("The Catcher in the Rye", "JD Salinger", 234, 10.00)
 
-# TODO: print the price of book1
-print(b1.getprice())
+# # TODO: print the price of book1
+# print(b1.getprice())
 
-# TODO: try setting the discount
-print(b2.getprice())
-b2.setdiscount(0.25)
-print(b2.getprice())
+# # TODO: try setting the discount
+# print(b2.getprice())
+# b2.setdiscount(0.25)
+# print(b2.getprice())
 
 # TODO: properties with double underscores are hidden by the interpreter
+# the idea is that this is supposed to protect the attribute from being changed outside of the class
+print(b2.__secret)
+# but there is a work around
+print(b2.__secret)
