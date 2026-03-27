@@ -4,3 +4,5 @@ These files are basic uses in python
 [Learning Python](https://www.linkedin.com/learning/learning-python-2021)
 
 [Pearson's intro to python](https://www.linkedin.com/learning/introduction -to-python-learn-how-to-program-today-with-python-by-pearson)
+
+[Python OOP](https://www.linkedin.com/learning/python-object-oriented-programming-22888296)
