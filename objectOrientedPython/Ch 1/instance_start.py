@@ -9,7 +9,7 @@ class Book:
         self.title = title
         # TODO: add properties
         self.author = author
-        self.pages = price
+        self.pages = pages
         self.price = price
         self.__secret = "This is a secret attribute"
 
@@ -37,6 +37,6 @@ b2 = Book("The Catcher in the Rye", "JD Salinger", 234, 10.00)
 
 # TODO: properties with double underscores are hidden by the interpreter
 # the idea is that this is supposed to protect the attribute from being changed outside of the class
-print(b2.__secret)
+# print(b2.__secret)
 # but there is a work around
-print(b2.__secret)
+print(b2._Book__secret)
